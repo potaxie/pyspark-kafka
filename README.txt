@@ -3,7 +3,6 @@ Pyspark Streaming Consume Kafka Data
   The project is for use Pyspark Streaming to real-time consumption of Kafka data<br />  
     
   
-    
 The Implementation Process Of Project  
 -----------------------------------  
   Include the priciple of frame and code<br />   
