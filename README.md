@@ -35,7 +35,7 @@ Pyspark Streaming Consume Kafka Data and Put into Hbase
 
     
     
-2.The conclusion Of Project  
+2.The conclusion of Project  
 ----------------------------------- 
 
     the project is failed when submit spark on yarn
