@@ -1,4 +1,4 @@
-![image](http://images.cnitblog.com/i/607542/201403/141558148063393.gif)
+![image](http://www.soogif.com/materialPage/AVznHP6vNco)
 
 Pyspark Streaming Consume Kafka Data and Put into Hbase  
 ===================================  
