@@ -1,4 +1,4 @@
-![image](http://www.soogif.com/materialPage/AVznHP6vNco)
+                          ![image](http://images.cnitblog.com/i/607542/201403/141558148063393.gif)
 
 Pyspark Streaming Consume Kafka Data and Put into Hbase  
 ===================================  
@@ -31,7 +31,7 @@ The Implementation Process Of Project
 The conclusion Of Project  
 ----------------------------------- 
 ```javascript
-  this project is failed when submit spark on yarn
+  the project is failed when submit spark on yarn
 ```
  
 ### 链接  
