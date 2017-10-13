@@ -42,6 +42,4 @@ Pyspark Streaming Consume Kafka Data and Put into Hbase
 
  
 ### 链接 
-
-1.[click this connect to www.google.com](http://www.google.com)<br />  
-2.[click this connect to www.baidu.com](http://www.baidu.com)<br />  
+1.[click this connect to www.baidu.com](http://www.baidu.com)
