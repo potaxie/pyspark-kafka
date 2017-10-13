@@ -13,16 +13,18 @@ The Implementation Process Of Project
  1.Spark2.1 , kafka1.0 , python2.7 ,hbase0.98<br />
  2.Spark-Streaming have two method to cunsume kafka data<br /> 
  ```javascript
-  first is Receive-base method as same as Storm,real-time read cache_data to memory<br />   
-  second is Direct method at regular time  to read data<br /> 
+  first is Receive-base method as same as Storm,real-time read cache_data to memory   
+  second is Direct method at regular time  to read data 
  ```
      
 ### Core_Code of Project
+```javascript
     lines = KafkaUtils.createDirectStream(ssc,topic,kafkaParams={"metadata.broker.list":brokers})
     with table.batch(batch_size=1000) as b:
             b.put((line.label),{
                 b'label:itemtype': (line.label),
                 b'infomation:url': (str(line.value)),})
+```
 
     
     
