@@ -15,13 +15,13 @@ Pyspark Streaming Consume Kafka Data and Put into Hbase
 ### 1.2Theory of Porject
  Spark-Streaming have two method to cunsume kafka data<br />   
 
-    （1）first is Receive-base method as same as Storm,real-time read cache_data to memory， that‘s it after extract<br />  
-    kafka_data ,to put data into memory,then timing handle. but this way has some disadvantage such as if clony<br />   
-    out，data will be losed ，this also can be void for start WAL and setting Storagelevel，so will hava a receiver<br />  
-    to real-time consume data<br /> 
+    （1）first is Receive-base method as same as Storm,real-time read cache_data to memory， that‘s it after extract  
+    kafka_data ,to put data into memory,then timing handle. but this way has some disadvantage such as if clony   
+    out，data will be losed ，this also can be void for start WAL and setting Storagelevel，so will hava a receiver 
+    to real-time consume data
     
-    （2）second is Direct method at regular time  to read data ，this way is delayed. That is, when action really<br />
-    triggers it,only goes to kafka to receive data . it mapping kafka_partition_data to kafka_rdd<br />  
+    （2）second is Direct method at regular time  to read data ，this way is delayed. That is, when action really
+    triggers it,only goes to kafka to receive data . it mapping kafka_partition_data to kafka_rdd
 
      
 ### 1.3Core_Code of Project
