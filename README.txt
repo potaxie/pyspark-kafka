@@ -1,18 +1,18 @@
-Pyspark Streaming Consume Kafka Data
+Pyspark Streaming Consume Kafka Data 
 ===================================  
-  The project is for use Pyspark Streaming to real-time consumption of Kafka data\<h1\><br />
+  The project is for use Pyspark Streaming to real-time consumption of Kafka data\<h1\><br /> 
   
     
-The Implementation Process Of Project
+The Implementation Process Of Project 
 -----------------------------------   
-  Include the priciple of frame and code \<h2\><br />
+  Include the priciple of frame and code \<h2\><br /> 
 
     
-### Framework of Porject
-  Spark2.1 , kafka1.0 , python2.7\<h3\><br /> 
-  Spark-Streaming have two method to cunsume kafka data\<h4\><br /> 
-    first is Receive-base method as same as Storm,real-time read cache_data to memory\<h5\><br /> 
-    second is Direct method at regular time  to read data\<h6\><br /> 
+### Framework of Porject 
+  Spark2.1 , kafka1.0 , python2.7\<h3\><br />  
+  Spark-Streaming have two method to cunsume kafka data\<h4\><br />   
+    first is Receive-base method as same as Storm,real-time read cache_data to memory\<h5\><br />  
+    second is Direct method at regular time  to read data\<h6\><br />  
     
   小标题类似html的\<h3\><br />  
   小标题的格式如下 ### 小标题<br />  
