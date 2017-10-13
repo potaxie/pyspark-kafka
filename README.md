@@ -9,9 +9,9 @@ The Implementation Process Of Project
     
 ### Framework of Porject 
    Spark2.1 , kafka1.0 , python2.7 ,hbase0.98<br />  
-   Spark-Streaming have two method to cunsume kafka data<br />   
-     first is Receive-base method as same as Storm,real-time read cache_data to memory<br />  
-     second is Direct method at regular time  to read data<br /> 
+    Spark-Streaming have two method to cunsume kafka data<br />   
+      first is Receive-base method as same as Storm,real-time read cache_data to memory<br />  
+      second is Direct method at regular time  to read data<br /> 
      
 ### Core_Code of Project
     lines = KafkaUtils.createDirectStream(ssc,topic,kafkaParams={"metadata.broker.list":brokers})
