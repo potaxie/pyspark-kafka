@@ -1,24 +1,22 @@
-Pyspark Streaming Consume Kafka Data 
+Pyspark Streaming Consume Kafka Data  
 ===================================  
-  The project is for use Pyspark Streaming to real-time consumption of Kafka data\<h1\><br /> 
+  The project is for use Pyspark Streaming to real-time consumption of Kafka data<br />  
+    
   
-    
-The Implementation Process Of Project 
------------------------------------   
-  Include the priciple of frame and code \<h2\><br /> 
-
+    
+The Implementation Process Of Project  
+-----------------------------------  
+  Include the priciple of frame and code<br />   
     
 ### Framework of Porject 
-  Spark2.1 , kafka1.0 , python2.7\<h3\><br />  
-  Spark-Streaming have two method to cunsume kafka data\<h4\><br />   
-    first is Receive-base method as same as Storm,real-time read cache_data to memory\<h5\><br />  
-    second is Direct method at regular time  to read data\<h6\><br />  
-    
-  小标题类似html的\<h3\><br />  
-  小标题的格式如下 ### 小标题<br />  
-  注意#和标题字符中间要有空格  
-
-### Code of Project  
+  Spark2.1 , kafka1.0 , python2.7<br />  
+  Spark-Streaming have two method to cunsume kafka data<br />   
+    first is Receive-base method as same as Storm,real-time read cache_data to memory<br />  
+    second is Direct method at regular time  to read data<br />  
+  
+### 注意!!!下面所有语法的提示我都先用小标题提醒了!!!   
+  
+### 单行文本框  
     这是一个单行的文本框,只要两个Tab再输入文字即可  
           
 ### 多行文本框    
