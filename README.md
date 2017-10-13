@@ -10,8 +10,8 @@ The Implementation Process Of Project
 ### Framework of Porject  
  1.Spark2.1 , kafka1.0 , python2.7 ,hbase0.98<br />
  2.Spark-Streaming have two method to cunsume kafka data<br />   
-> * first is Receive-base method as same as Storm,real-time read cache_data to memory<br />  
-> * second is Direct method at regular time  to read data<br /> 
+    first is Receive-base method as same as Storm,real-time read cache_data to memory<br />  
+    second is Direct method at regular time  to read data<br /> 
      
 ### Core_Code of Project
     lines = KafkaUtils.createDirectStream(ssc,topic,kafkaParams={"metadata.broker.list":brokers})
@@ -26,3 +26,6 @@ The conclusion Of Project
 ----------------------------------- 
 > * this project is failed when submit spark on yarn
            
+### 链接  
+1.[点击这里你可以链接到www.google.com](http://www.google.com)<br />  
+2.[点击这里你可以链接到www.baidu.com](http://www.baidu.com)<br />  
