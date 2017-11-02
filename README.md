@@ -45,7 +45,7 @@ Pyspark Streaming Consume Kafka Data and Put into Hbase
 ```
     
     
-2.Problems of Project
+2.The problems of Project
 -----------------------------------  
 
     the project is failed when submit spark on yarn maybe caused kafka_version or spark environment,
