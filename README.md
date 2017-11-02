@@ -5,14 +5,14 @@ Pyspark Streaming Consume Kafka Data and Put into Hbase
   The project is for use Pyspark Streaming to real-time consumption of Kafka data<br />  
     
   
-1.The Implementation Process Of Project  
+1.The Implementation Principle Of Project  
 -----------------------------------  
   Include the priciple of frame and code<br />   
     
 ### (1) Requirments  
  Spark2.1,kafka1.0,python2.7,hbase0.98<br />
  
-### (2) principle of Porject
+### (2) Flow of Porject
  PySpark_Streaming have two method to cunsume kafka data,<br />   
 
     <1> one is Receive-base method as same as Storm,real-time read cache_data to memory， that‘s it after extract  
