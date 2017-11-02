@@ -9,10 +9,10 @@ Pyspark Streaming Consume Kafka Data and Put into Hbase
 -----------------------------------  
   Include the priciple of frame and code<br />   
     
-### （1）Requirments  
+### (1) Requirments  
  Spark2.1,kafka1.0,python2.7,hbase0.98<br />
  
-###  (2) principle of Porject
+### (2) principle of Porject
  PySpark_Streaming have two method to cunsume kafka data<br />   
 
     （1）one is Receive-base method as same as Storm,real-time read cache_data to memory， that‘s it after extract  
@@ -25,7 +25,7 @@ Pyspark Streaming Consume Kafka Data and Put into Hbase
   
   now the second way is more popular
    
-### 1.3Core_Code of Project
+### (3) Core_Code of Project
 ```javascript
     //create streaming receive kafka data
     lines = KafkaUtils.createDirectStream(ssc,topic,kafkaParams={"metadata.broker.list":brokers})
