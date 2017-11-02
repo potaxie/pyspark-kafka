@@ -9,7 +9,7 @@ Pyspark Streaming Consume Kafka Data and Put into Hbase
 -----------------------------------  
   Include the priciple of frame and code<br />   
     
-### (1) Requirments  
+### (1) Requirements  
  Spark2.1,kafka1.0,python2.7,hbase0.98<br />
  
 ### (2) Flow of Project
