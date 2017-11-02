@@ -9,36 +9,45 @@ Pyspark Streaming Consume Kafka Data and Put into Hbase
 -----------------------------------  
   Include the priciple of frame and code<br />   
     
-### 1.1Framework of Porject  
- Spark2.1 , kafka1.0 , python2.7 ,hbase0.98<br />
+### （1）Requirments  
+ Spark2.1,kafka1.0,python2.7,hbase0.98<br />
  
-### 1.2Theory of Porject
- Spark-Streaming have two method to cunsume kafka data<br />   
+###  (2) principle of Porject
+ PySpark_Streaming have two method to cunsume kafka data<br />   
 
-    （1）first is Receive-base method as same as Storm,real-time read cache_data to memory， that‘s it after extract  
+    （1）one is Receive-base method as same as Storm,real-time read cache_data to memory， that‘s it after extract  
     kafka_data ,to put data into memory,then timing handle. but this way has some disadvantage such as if clony   
     out，data will be losed ，this also can be void for start WAL and setting Storagelevel，so will hava a receiver 
     to real-time consume data
     
-    （2）second is Direct method at regular time  to read data ，this way is delayed. That is, when action really
+    （2）other is Direct method at regular time  to read data ，this way is delayed. That is, when action really
     triggers it,only goes to kafka to receive data . it mapping kafka_partition_data to kafka_rdd
-
-     
+  
+  now the second way is more popular
+   
 ### 1.3Core_Code of Project
 ```javascript
+    //create streaming receive kafka data
     lines = KafkaUtils.createDirectStream(ssc,topic,kafkaParams={"metadata.broker.list":brokers})
-    with table.batch(batch_size=1000) as b:
-            b.put((line.label),{
-                b'label:itemtype': (line.label),
-                b'infomation:url': (str(line.value)),})
+    //get the required data
+    lines1=lines.map(lambda x:x[1])
+    //get a new rdd like schema data
+    parsed_words=lines1.map(lambda data:Row(label=getValue(str,data["identity"]),
+                                            value=data))
+    //parese each rdd insert into hbase                                       
+    parsed_words.foreachRDD(save_to_hbase)   
+    def save_to_hbase(parsed_words)
+      for line in parsed_rdd.collect():
+          with table.batch(batch_size=1000) as b:
+              b.put((line.label),{
+                  b'label:itemtype': (line.label),
+                  b'infomation:url': (str(line.value)),})
 ```
-
-    
     
 2.The conclusion of Project  
 ----------------------------------- 
 
-    the project is failed when submit spark on yarn
+    the project is failed when submit spark on yarn maybe caused kafka_version or spark environment 
 
  
 ### 链接 
