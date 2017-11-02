@@ -44,10 +44,16 @@ Pyspark Streaming Consume Kafka Data and Put into Hbase
                   b'infomation:url': (str(line.value)),})
 ```
     
-2.The conclusion of Project  
+    
+2.Problems of Project
+-----------------------------------  
+    the project is failed when submit spark on yarn maybe caused kafka_version or spark environment,<br />
+    the error log shows failed because of the conflict of jar package，however when  submit pyspark_egg，<br />
+    i only -jar spark-streaming-kafka-0-8-assembly_2.11-2.1.0.jar,so i guess this jar conflict with yarn jar.<br />
+    
+3.The conclusion of Project  
 ----------------------------------- 
-
-    the project is failed when submit spark on yarn maybe caused kafka_version or spark environment 
+    Writing spark with python is simple, provided that there is no problem with the development environment
 
  
 ### 链接 
