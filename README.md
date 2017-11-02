@@ -48,9 +48,9 @@ Pyspark Streaming Consume Kafka Data and Put into Hbase
 2.Problems of Project
 -----------------------------------  
 
-    the project is failed when submit spark on yarn maybe caused kafka_version or spark environment,<br />
-    the error log shows failed because of the conflict of jar package，however when  submit pyspark_egg，<br />
-    i only -jar spark-streaming-kafka-0-8-assembly_2.11-2.1.0.jar,so i guess this jar conflict with yarn jar.<br />
+    the project is failed when submit spark on yarn maybe caused kafka_version or spark environment,
+    the error log shows failed because of the conflict of jar package，however when  submit pyspark_egg,
+    i only -jar spark-streaming-kafka-0-8-assembly_2.11-2.1.0.jar,so i guess this jar conflict with yarn jar.
     
 3.The conclusion of Project  
 ----------------------------------- 
