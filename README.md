@@ -22,9 +22,8 @@ PySpark_Streaming have two method to cunsume kafka data,<br />
     
     <2> other is Direct method at regular time  to read data ，this way is delayed. That is, when action really
     triggers it,only goes to kafka to receive data . it mapping kafka_partition_data to kafka_rdd
-  
 and now the second way is more popular.<br />  
-   
+
 ### (3) Core_Code of Project
 ```javascript
     //create streaming receive kafka data
