@@ -2,18 +2,18 @@
 
 Pyspark Streaming Consume Kafka Data and Put into Hbase  
 ===================================  
-  The project is for use Pyspark Streaming to real-time consumption of Kafka data<br />  
+The project is for use Pyspark Streaming to real-time consumption of Kafka data<br />  
     
   
 1.The Implementation Principle Of Project  
 -----------------------------------  
-  Include the priciple of frame and code<br />   
+Include the priciple of frame and code<br />   
     
 ### (1) Requirements  
- Spark2.1,kafka1.0,python2.7,hbase0.98<br />
+Spark2.1,kafka1.0,python2.7,hbase0.98<br />
  
 ### (2) Flow of Project
- PySpark_Streaming have two method to cunsume kafka data,<br />   
+PySpark_Streaming have two method to cunsume kafka data,<br />   
 
     <1> one is Receive-base method as same as Storm,real-time read cache_data to memory， that‘s it after extract  
     kafka_data ,to put data into memory,then timing handle. but this way has some disadvantage such as if clony   
@@ -23,7 +23,7 @@ Pyspark Streaming Consume Kafka Data and Put into Hbase
     <2> other is Direct method at regular time  to read data ，this way is delayed. That is, when action really
     triggers it,only goes to kafka to receive data . it mapping kafka_partition_data to kafka_rdd
   
-  and now the second way is more popular.<br />  
+and now the second way is more popular.<br />  
    
 ### (3) Core_Code of Project
 ```javascript
@@ -47,14 +47,13 @@ Pyspark Streaming Consume Kafka Data and Put into Hbase
     
 2.The problems of Project
 -----------------------------------  
-
-    the project is failed when submit spark on yarn maybe caused kafka_version or spark environment,
-    the error log shows failed because of the conflict of jar package，however when  submit pyspark_egg,
-    i only -jar spark-streaming-kafka-0-8-assembly_2.11-2.1.0.jar,so i guess this jar conflict with yarn jar.
+the project is failed when submit spark on yarn maybe caused kafka_version or spark environment,
+the error log shows failed because of the conflict of jar package，however when  submit pyspark_egg,
+i only -jar spark-streaming-kafka-0-8-assembly_2.11-2.1.0.jar,so i guess this jar conflict with yarn jar.
     
 3.The conclusion of Project  
 ----------------------------------- 
-    Writing spark with python is simple, provided that there is no problem with the development environment
+Writing spark with python is simple, provided that there is no problem with the development environment
 
  
 ### connection 
